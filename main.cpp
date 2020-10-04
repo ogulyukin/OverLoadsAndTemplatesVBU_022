@@ -1,10 +1,8 @@
 #include <iostream>
 #define tab "\t"
+#include "Functions.h"
+#include "Functions.cpp"
 using namespace std;
-template <typename T>void FillRand(T arr[], const int n);
-template <typename T>void Print(const T arr[], const int n);
-
-
 int main() {
     setlocale(LC_ALL, "");
     const int n = 5;
@@ -17,14 +15,4 @@ int main() {
     Print(brr,m);
     return 0;
 }
-template <typename T>void FillRand(T arr[], const int n){
-    for (int i = 0; i < n; i++){
-        arr[i] = rand()%1000/(double)100;
-    }
-}
-template <typename T>void Print(const T arr[], const int n){
-    for (int i = 0; i < n; i++){
-        cout << arr[i] << tab;
-    }
-    cout << endl;
-}
+
