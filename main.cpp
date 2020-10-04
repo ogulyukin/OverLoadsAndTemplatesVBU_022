@@ -19,7 +19,7 @@ int main() {
 }
 template <typename T>void FillRand(T arr[], const int n){
     for (int i = 0; i < n; i++){
-        arr[i] = rand()%100;
+        arr[i] = rand()%1000/(double)100;
     }
 }
 template <typename T>void Print(const T arr[], const int n){
